@@ -1,4 +1,4 @@
-package utilfunctions;
+package test;
 
 import java.util.Arrays;
 import java.util.List;
@@ -6,6 +6,8 @@ import java.util.List;
 import org.hamcrest.collection.IsIterableContainingInOrder;
 import org.junit.Assert;
 import org.junit.Test;
+
+import utilfunctions.MathUtilFunctions;
 
 public class TestMathUtilFunctions {
 
