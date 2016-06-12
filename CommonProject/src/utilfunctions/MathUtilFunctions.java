@@ -22,8 +22,7 @@ public class MathUtilFunctions {
 		factors.add(n);
 
 		// Loop should be less than equal to sqrt. i.e i<=sqrt
-		// But I have chosen less than sqrt as equal case i will handle
-		// Separately. i.e i<sqrt
+		// But I have chosen less than sqrt as equal case i will handle Separately. i.e i<sqrt
 		// This will help me not to check equality condition all the time.
 		// also if a is factor then n/a is also a factor
 		int sqrt = (int) Math.sqrt(n);
@@ -50,8 +49,7 @@ public class MathUtilFunctions {
 
 		List<Integer> result = new ArrayList<Integer>();
 		if (n <= 1) {
-			// returning empty list.. below line might not work in some env as
-			// it would return empty list of Object (not integer)
+			// returning empty list.. below line might not work in some env as it would return empty list of Object (not integer)
 			// return Collections.emptyList();
 			return result;
 		}
@@ -90,16 +88,14 @@ public class MathUtilFunctions {
 	}
 
 	// Euclid's way to find GCD (greatest common divisor) Ex GCD(105,350) is 35
-	// divident and divisor can be swap. their wont be any problem as the algo
-	// is taking care of it automatically
+	// divident and divisor can be swap. their wont be any problem as the algo is taking care of it automatically
 	// time complexity is O(log(divisor))
 	public static int findGCD_ByEuclid_Recursion(int divident, int divisor) {
 		return (divisor == 0) ? divident : findGCD_ByEuclid_Recursion(divisor, divident % divisor);
 	}
 
 	// Euclid's way to find GCD (greatest common divisor) Ex GCD(105,350) is 35
-	// divident and divisor can be swap. their wont be any problem as the algo
-	// is taking care of it automatically
+	// divident and divisor can be swap. their wont be any problem as the algo is taking care of it automatically
 	// time complexity is O(log(divisor))
 	public static int findGCD_ByEuclid(int divident, int divisor) {
 		int reminder;
