@@ -1,0 +1,24 @@
+{
+    "name": "sachin/aztecgamesstudios",
+    "description": "Manages the online presence of AGS",
+    "type": "first php project",
+    "license": "Apache-2.x",
+    "authors": [
+        {
+            "name": "Sachin Kumar",
+            "email": "sachin376@gmail.com"
+        }
+    ],
+    
+    "require": {
+        "twbs/bootstrap": "^4.1",
+        "twig/twig": "^2.5",
+        "monolog/monolog": "^1.23",
+        "components/jquery": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "AztecGameStudios\\": "src/"
+        }
+    }
+}

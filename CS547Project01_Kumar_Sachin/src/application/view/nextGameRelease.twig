@@ -1,0 +1,27 @@
+{% extends 'base.twig' %}
+
+{# Below block will replace 'title' in the base.twig file #}
+{% block title %} 
+	<title>Next Game Release Info</title>
+{% endblock %}
+
+
+{# Below block will replace 'content' block in the base.twig file #}
+{% block content %}
+
+		<div class="container">
+		  <h3>AGS next big game release is on </h3>
+		  <h1>Oct 31th 18:00</h1>
+		  <h1> 
+				{{ viewData.format('%R %a days left') }} <br><br><br>
+
+				{{viewData.y}} years<br>
+				{{viewData.m}} months<br>
+				{{viewData.d}} days<br>
+				{{viewData.h}} hours<br>
+				{{viewData.i}} minutes<br>
+				{{viewData.s}} seconds<br>
+		</h1>
+		</div>
+
+{% endblock %} 

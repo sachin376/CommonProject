@@ -1,0 +1,26 @@
+{% extends 'base.twig' %}
+
+{# Below block will replace 'title' in the base.twig file #}
+{% block title %} 
+	<title>Home</title>
+{% endblock %}
+
+
+{# Below block will replace 'content' block in the base.twig file #}
+{% block content %}
+		<div class="container">
+		  <h3>Home</h3>
+		  <p>Welcome to my first PHP MVC project without using any MVC framework !!</p>
+
+	{{ app.session.get('authenticated') }}
+
+
+
+			{{ app.session.get('authenticated') }}
+			{{ app.session["authenticated"] }}
+			{{ session.get('authenticated') }}
+			{{ app.session }}
+
+
+		</div>
+{% endblock %} 

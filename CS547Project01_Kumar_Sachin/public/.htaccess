@@ -1,0 +1,12 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule . index.php [L]
+# RewriteRule ^(.+)$ index.php/$1 [L]
+RewriteRule ^(.+)$ index.php?url=$1 [L]
+
+# This one will redirect the user to the Webroot directory.
+# RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ Webroot/$1
+
+# This one will redirect to the index.php
+# RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ index.php?p=$1
